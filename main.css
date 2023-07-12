@@ -27,6 +27,8 @@ a:hover {
 
 .avatar {
     border-radius: 120%;
+    max-width: 100%;
+    height: auto;
     width: 400px;
 }
 
@@ -73,40 +75,25 @@ a:hover {
   grid-column: 3;
 }
 
-#content1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    text-align: center;
-    max-width: 600px;
-    padding: 32px;
-    line-height: 1.6em;
-}
+/*#content1 {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    margin-right: -50%;*/
+/*    transform: translate(-50%, -50%) ;*/
+/*    text-align: center;*/
+/*    max-width: 600px;*/
+/*    padding: 32px;*/
+/*    line-height: 1.6em;*/
+/*}*/
 
-#content2 {
-    position: absolute;
-    top: 170%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    text-align: center;
-    max-width: 1000px;
-    padding: 32px;
-    line-height: 1.6em;
-}
-
+#content1,
+#content2,
 #content3 {
-    position: absolute;
-    top: 240%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    text-align: center;
-    max-width: 600px;
-    padding: 32px;
-    line-height: 1.6em;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90%;
+  padding: 16px;
 }
 
 .column-container > div {
@@ -123,3 +110,15 @@ a:hover {
   background-color: #000; /* Adjust the color of the line as needed */
 }
 
+@media screen and (max-width: 768px) {
+  .column-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icons {
+    width: 100%;
+    max-width: none;
+  }
+}
