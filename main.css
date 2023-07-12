@@ -13,21 +13,21 @@ a:hover {
     color: #217ee7;
 }
 
-#content {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    text-align: center;
-    max-width: 600px;
-    padding: 32px;
-    line-height: 1.6em;
-}
+/*#content {*/
+/*    position: absolute;*/
+/*    top: 170%;*/
+/*    left: 50%;*/
+/*    margin-right: -50%;*/
+/*    transform: translate(-50%, -50%) ;*/
+/*    text-align: center;*/
+/*    max-width: 800px;*/
+/*    padding: 32px;*/
+/*    line-height: 1.6em;*/
+/*}*/
 
 .avatar {
-    border-radius: 50%;
-    width: 200px;
+    border-radius: 120%;
+    width: 400px;
 }
 
 .icons {
@@ -43,7 +43,7 @@ a:hover {
 
 .icons li {
     display: inline;
-    width: 42px;
+    width: 60px;
 }
 
 .icons a {
@@ -53,3 +53,73 @@ a:hover {
 .icons a:hover {
     color: #1565c0;
 }
+
+/* custom */
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.column-left {
+  grid-column: 1;
+}
+
+.column-center {
+  grid-column: 2;
+}
+
+.column-right {
+  grid-column: 3;
+}
+
+#content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    text-align: center;
+    max-width: 600px;
+    padding: 32px;
+    line-height: 1.6em;
+}
+
+#content2 {
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    text-align: center;
+    max-width: 1000px;
+    padding: 32px;
+    line-height: 1.6em;
+}
+
+#content3 {
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    text-align: center;
+    max-width: 600px;
+    padding: 32px;
+    line-height: 1.6em;
+}
+
+.column-container > div {
+  position: relative;
+}
+
+.column-container > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Adjust the position of the line as needed */
+  width: 1px;
+  height: 100%;
+  background-color: #000; /* Adjust the color of the line as needed */
+}
+
