@@ -25,11 +25,21 @@ a:hover {
 /*    line-height: 1.6em;*/
 /*}*/
 
+/*.avatar {*/
+/*    border-radius: 5%;*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    width: 400px;*/
+/*}*/
+
 .avatar {
-    border-radius: 5%;
-    max-width: 100%;
-    height: auto;
-    width: 400px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .icons {
