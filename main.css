@@ -168,3 +168,7 @@ footer p {
     height: auto; /* Allow the height to adjust proportionally */
   }
 }
+
+.enforce_bold {
+    font-weight: bold;
+}
