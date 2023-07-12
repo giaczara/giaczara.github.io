@@ -122,3 +122,9 @@ a:hover {
     max-width: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .column-container > div:not(:last-child)::after {
+    display: none;
+  }
+}
